@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+.banner {
+    background-color: transparent;
+    color: black;
+    height: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.banner h1 {
+    margin: 20px;
+    color: #fff;
+}
+
+.banner-info {
+    text-align: center;
+    color: #fff;
+}
+
+.banner-info img {
+    width: 300px;
+    border-radius: 20%;
+    margin: -1px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+}
+
+main img {
+    border-radius: 100%;
+    width: 100px;
+}
+
+main div {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main div p {
+    color: #fff;
+    margin-top: 30px;
+    padding: 23px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+
+main div a {
+    color: #fff;
+}

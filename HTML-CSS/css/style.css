@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 100vh;
+    background: url('img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(219, 200, 200);
+    padding: 10px;
+    background-color: transparent;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+
+.moew {
+    display: flex;
+    list-style: none;
+}
+
+.moew li {
+    margin: 10px;
+}
+
+.moew li a {
+    text-decoration: none;
+    color: black; 
+}
+
+.banner {
+    background-color: transparent;
+    color: black;
+    height: 303px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    margin: 20px;
+}
+
+.banner-info {
+    text-align: center;
+}
+
+.banner-info img {
+    width: 300px;
+    border-radius: 20%;
+    margin-top: 80px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+    text-align: center;
+    
+}
+
+main img {
+    border-radius: 100%;
+    width: 100px;
+}
+
+main div {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+main div p {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+
